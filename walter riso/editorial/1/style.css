@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+* {
+	list-style: none;
+	box-sizing: border-box;
+}
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+	height: 100px;
+}
+.sub {
+	text-decoration: none;
+}
+#HEADER {
+	background-color: #121212;
+}
+.logo{
+	height: 40px;
+	color: white;
+}
+.inicio{
+	color: white;
+	display: flex;
+	margin-inline-start: 110px;
+	font-size: 70px;
+	margin-bottom: 10px;
+}
+.dr{
+	color: grey;
+	display: flex;
+	margin-inline-start: 110px;
+	margin-bottom: 40px;
+	font-size: 25px;
+}
+.menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.item{
+	margin: 0 15px;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	color: #8c8c8c;
+}
+.item:hover {
+	color: #b5b5b5;
+}
+#menu{
+	display: none;
+}
+.menu-icono{
+	width: 25px;
+}
+label{
+	cursor: pointer;
+	display: none;
+}
+.contenedor {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.imagen {
+  width: 260px; /* Ancho de la imagen */
+  height: 400px;
+  margin-right: 20px; /* Margen a la derecha de la imagen para separarla del texto */
+  margin-top: 110px;
+  margin-left: 180px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.texto {
+  flex: 1; /* El texto ocupará todo el espacio restante */
+  margin-right: 150px;
+  margin-left: 20px;
+  margin-top: 145px;
+  font-size: 21px;
+  color: grey;
+}
+.tex {
+  flex: 1; /* El texto ocupará todo el espacio restante */
+  margin-right: 150px;
+  margin-top: 125px;
+  font-size: 25px;
+  color: black;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: #010619;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    }
+    .editorial{
+	margin-left: 600px;
+	height: 30px;
+	margin-top: 40px;
+
+}
+.cont {
+  flex-direction: row;
+}
+
+    .btn2{
+	padding: 10px 140px;
+	border-radius: 30px;
+	background-color: #00BCAD;
+	color: #F2F2f2;
+	font-size: 20px;
+	font-weight: 600;
+	margin-inline-start: 150px;
+	margin-inline-end: 150px;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn2:hover {
+	background-color: #11686B;
+}
+.nd{
+	border-radius: 8px;
+	background-color: aquamarine;
+}
+@media(max-width:990px){
+	.menu {
+		padding: 30px;
+		margin: 0;
+	}
+
+	label {
+		display: initial;
+	}
+
+	.menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #323337;
+		display: none;
+	}
+
+	.item {
+		margin: 0 0 20px 0;
+		width: 100%;
+	}
+	#menu:checked ~ .menu {
+		display: initial;
+	}
+	.contenedor{
+		flex-direction: column;
+	}
+.imagen {
+  width: 430px; /* Ancho de la imagen */
+  height: 600px;
+  margin-right: 20px; /* Margen a la derecha de la imagen para separarla del texto */
+  margin-top: 110px;
+  margin-left: 10px;
+}
+
+.texto {
+  flex: 1; /* El texto ocupará todo el espacio restante */
+  margin-right: 50px;
+  margin-left: 70px;
+  margin-top: 35px;
+  font-size: 21px;
+  color: grey;
+}
+.editorial{
+    display: flex;
+	margin-inline-start: 255px;
+	margin-inline-end: 230px;
+	}
+	.btn2 {
+		margin-top: 65px;
+		margin-inline-start: 110px;
+	margin-inline-end: 100px;
+	}
+.pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+}
+
+
